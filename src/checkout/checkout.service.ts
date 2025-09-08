@@ -38,7 +38,6 @@ export class CheckoutService {
   }
 
   async handleCheckoutWebhook(event: any) {
-    console.log(event);
     if (event.type !== 'checkout.session.completed') {
       return;
     }
